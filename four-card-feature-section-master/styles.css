@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  max-width: 550px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 200;
+}
+header h1:nth-child(2) {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 200;
+
+  color: hsl(229, 6%, 66%);
+}
+
+/* ****** Cards ****** */
+.cards {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+.card {
+  margin: 1em;
+  max-width: 310px;
+  height: 220px;
+  background-color: #ffffff;
+  border-top: 4px solid hsl(0, 78%, 62%);
+  border-radius: 3px;
+  padding: 0.7em;
+  position: relative;
+  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 15px 0 30px;
+}
+
+.card-push {
+  transform: translateY(50%);
+}
+
+.calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+@media (max-width: 750px) {
+  .card-push {
+    transform: translateY(0);
+  }
+}

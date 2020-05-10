@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 36%, 70%);
+}
+
+.container {
+  width: 1440px;
+}
+
+.left {
+  background: url(images/bg-pattern-desktop.svg);
+  padding: 3em;
+}
+
+.inner-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+header img {
+  width: 200px;
+  margin-bottom: 4em;
+}
+
+.content h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 8px;
+  margin: 0.5em 0;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.content h1 span {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+
+.content p {
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2em;
+}
+
+input {
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 0.6em;
+  color: hsl(0, 36%, 70%);
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 25px;
+}
+
+input:focus {
+  box-shadow: 0px 0px 10px hsla(0, 36%, 70%, 0.5);
+}
+.input-container {
+  position: relative;
+}
+
+button {
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  font-size: 1.3rem;
+  padding: 0.65em 2em;
+  border-radius: 25px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+input:focus button {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  opacity: 0.6;
+}
+
+.error {
+  position: absolute;
+  top: 19%;
+  right: 25%;
+  display: none;
+}
+
+.msgError {
+  color: hsl(0, 93%, 68%);
+  font-size: 14px;
+  padding: 0.8em 0 0 1.8em;
+  visibility: hidden;
+}
+
+.right {
+  background: url(images/hero-desktop.jpg) center center/cover;
+}
+
+.hero-mobile {
+  width: 100%;
+  display: none;
+}
+
+@media (max-width: 575px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+  .inner-container {
+    width: 100%;
+    padding: 0;
+  }
+  header img {
+    width: 100px;
+    margin: 2em;
+  }
+  .right {
+    display: none;
+  }
+  .content {
+    padding: 0 2.2em;
+  }
+  .content h1 {
+    font-size: 2.7rem;
+    margin-bottom: 0.7em;
+  }
+  .left {
+    padding: 0;
+  }
+  .hero-mobile {
+    display: initial;
+  }
+}

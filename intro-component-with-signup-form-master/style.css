@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(images/bg-intro-desktop.png) center center/cover;
+  background-color: hsl(0, 100%, 74%, 0.9);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  align-items: center;
+}
+
+.left h1 {
+  font-size: 40px;
+  line-height: 50px;
+  word-spacing: 10px;
+  margin-bottom: 1em;
+}
+
+.left p {
+  font-size: 16px;
+}
+
+.right {
+  text-align: center;
+}
+.purple {
+  font-size: 15px;
+  background-color: hsl(248, 32%, 49%);
+  padding: 1.5em 0;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.purple span {
+  font-weight: 400;
+}
+
+.form {
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 1em 0 1.2em;
+}
+
+.form input {
+  width: 85%;
+  margin-top: 0.5em;
+  font-size: 17px;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+.form-control {
+  position: relative;
+}
+.form-control img {
+  position: absolute;
+  right: 6%;
+  top: 30%;
+  visibility: hidden;
+}
+
+#submit {
+  width: 92%;
+  padding: 0.8em 0 !important;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: hsl(154, 59%, 51%);
+  border: 1px solid hsl(154, 59%, 45%);
+  box-shadow: 0 3px hsl(154, 59%, 45%);
+}
+
+.right .terms {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  padding: 1.3em;
+  font-weight: 500;
+}
+
+.right .terms span {
+  color: red;
+}
+
+.alert {
+  color: hsl(0, 100%, 74%, 0.9);
+  text-align: right;
+  padding: 0.5em 2.5em 0;
+  font-size: 11px;
+  font-weight: 600;
+  visibility: hidden;
+}
+
+@media (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-gap: 10px;
+    justify-content: space-around;
+  }
+}
+
+#emailAddress:required {
+  color: #fff;
+  background-color: red;
+}
